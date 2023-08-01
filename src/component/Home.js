@@ -52,12 +52,12 @@ const Home = () => {
           </Link>
           <Link to="/Quotes">
             <div>
-              <img className=" rounded-lg h-[400px]" src={im5} alt  />
+              <img className=" rounded-lg h-[400px]" src={im5} alt =" "  />
             </div>
           </Link>
           <Link to="/Memes">
             <div>
-              <img className=" rounded-lg h-[400px]" src={im6} alt  />
+              <img className=" rounded-lg h-[400px]" src={im6} alt =""  />
             </div>
           </Link>
         </Carousel>
