@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,200;1,900&family=Ubuntu&display=swap');
+
+body{
+   font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* css loader generated using https://10015.io/tools/css-loader-generator */
+.spinner {
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   background: radial-gradient(farthest-side,#474bff 94%,#0000) top/9px 9px no-repeat,
+          conic-gradient(#0000 30%,#474bff);
+   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+   animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+   100% {
+      transform: rotate(1turn);
+   }
+}
+/* src/custom.css (create this file if it doesn't exist) */
+.background-image {
+   background-image: url('/src/assets/background.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+ .contactbackground-image {
+  background-image: url('/src/assets/contbg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ a {
+   background-image: linear-gradient(
+     to right,
+     #5a8290,
+     #4a6b77 50%,
+     #000 50%
+   );
+   background-size: 200% 100%;
+   background-position: -100%;
+   display: inline-block;
+   padding: 5px 0;
+   position: relative;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: all 0.3s ease-in-out;
+ }
+ 
+ 
+ a:before{
+   content: '';
+   background: #54b3d6;
+   display: block;
+   position: absolute;
+   bottom: -3px;
+   left: 0;
+   width: 0;
+   height: 3px;
+   transition: all 0.3s ease-in-out;
+ }
+ 
+ a:hover {
+  background-position: 0;
+ }
+ 
+ a:hover::before{
+   width: 100%;
+ }
+
+ .akash{
+  
+  backdrop-filter: blur(15px);
+  
+  color: 
+  #D35400 ;
+ }
+
+ 
+  .hello{
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255 ,0.18);
+ }
+ .ads{
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255 ,0.18);
+ }
+ 
+
+
+ button {
+  cursor: pointer;
+  font-weight: 700;
+ 
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #e4c22c;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #ccb568;
+}
+
+/* button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+button:hover svg {
+  transform: translateX(5px);
+} */
+
+
+
+button:active {
+  transform: scale(0.95);
+}
+
+.custom-scale {
+  transition-duration: 0.5s; 
+}
+.blur {
+  backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
+}
