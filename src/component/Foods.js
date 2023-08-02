@@ -6,7 +6,7 @@ import Spinner from './Spinner';
 
 const Foods = () => {
   const [loading,setLoading]= useState(true);
-  const API_KEY = process.env.REACT_APP_FOODS_API_KEY;
+  const API_KEY = 'd5a4ce12a2mshc0113032e6eb07cp19a8b0jsnc021f4d22d00';
   const [title, setTitle] = useState('');
   const [ingredients, setIngredients] = useState("");
   const [servings, setServings] = useState('');
@@ -43,9 +43,9 @@ const Foods = () => {
           console.error(error);
       }
   }
-  useEffect(()=>{
-    fetchFood();
-  },[]);
+  useEffect(() => {
+    fetchFood();  
+  }, []);
   const recipieHandler = () => {
     fetchFood();
   }
