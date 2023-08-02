@@ -58,7 +58,7 @@ const Quotes = () => {
           </p>
         )}
         <div>
-          <img className=" h-[300px] my-4 rounded-xl" src={img}></img>
+          <img className=" h-[300px] my-4 rounded-xl" src={img} alt="quotesPic"></img>
         </div>
 
         <button className=" mb-3" onClick={GenerateQuotes}>

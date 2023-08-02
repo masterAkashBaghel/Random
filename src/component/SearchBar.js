@@ -24,7 +24,7 @@ const SearchBar = () => {
       window.location.href = "/SearchGif";
     } else if (query === "Jokes" || query==="Joke" || query==="joke" || query==="jokes") {
       window.location.href = "/Jokes";
-    } else if (query === "Quotes" || query=="Quote" || query==="quotes" || query==="quote") {
+    } else if (query === "Quotes" || query==="Quote" || query==="quotes" || query==="quote") {
       window.location.href = "/Quotes";
     }
     else if (query === "Recipies" || query==="recipies" || query==="Recipy" || query==="recipy") {

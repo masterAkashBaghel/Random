@@ -9,7 +9,7 @@ const About = () => {
       {/* First section */}
       <div className="flex">
         {/* Images */}
-        <img className="h-[400px]  " src={ab2} alt="Image 1" />
+        <img className="h-[400px]  " src={ab2} alt="boyUsingComp" />
       </div>
       {/* Second section */}
       <div className="w-full md:w-1/2 p-5 md:p-10">

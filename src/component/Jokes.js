@@ -64,7 +64,7 @@ const Jokes = () => {
 
         
 <div>
-          <img className=" h-[300px] my-4 rounded-xl" src={img}></img>
+          <img className=" h-[300px] my-4 rounded-xl" src={img} alt="jokepic"></img>
         </div>
 
         <button className=" mb-3" onClick={jokeHandler}>

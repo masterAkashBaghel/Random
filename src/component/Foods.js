@@ -45,7 +45,7 @@ const Foods = () => {
   }
   useEffect(()=>{
     fetchFood();
-  },[])
+  },[]);
   const recipieHandler = () => {
     fetchFood();
   }
