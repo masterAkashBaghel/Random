@@ -11,20 +11,35 @@ font-family: 'Ubuntu', sans-serif;
 
 
 /* css loader generated using https://10015.io/tools/css-loader-generator */
+
 .spinner {
-   width: 56px;
-   height: 56px;
-   border-radius: 50%;
-   background: radial-gradient(farthest-side,#97dbe6 94%,#0000) top/9px 9px no-repeat,
-          conic-gradient(#0000 30%,#41e1b9);
-   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
-   animation: spinner-c7wet2 1s infinite linear;
+  width: 50px;
+  height: 50px;
+  display: grid;
+}
+.spinner::before,
+.spinner::after {    
+  content:"";
+  grid-area: 1/1;
+  --c: radial-gradient(farthest-side,#766DF4 92%,#0000);
+  background: 
+    var(--c) 50%  0, 
+    var(--c) 50%  100%, 
+    var(--c) 100% 50%, 
+    var(--c) 0    50%;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  animation: s2 1s infinite;
+}
+.spinner::before {
+margin:4px;
+filter:hue-rotate(45deg);
+background-size: 8px 8px;
+animation-timing-function: linear
 }
 
-@keyframes spinner-c7wet2 {
-   100% {
-      transform: rotate(1turn);
-   }
+@keyframes s2{ 
+100%{transform: rotate(.5turn)}
 }
 /* src/custom.css (create this file if it doesn't exist) */
 .background-image {
